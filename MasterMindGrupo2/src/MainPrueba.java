@@ -58,18 +58,18 @@ public class MainPrueba {
 
 
 private static int leerSegundoArgumento(String args) {
-         int longitud1=0;
+         int intentos=0;
          try{
-         longitud1 =Integer.parseInt(args);
+         intentos=Integer.parseInt(args);
          }catch(NumberFormatException e){
-                System.out.println("el primer argumento debe de ser un numero");
+                System.out.println("el segundo argumento debe de ser un numero");
                 System.exit(0);
          }
-         if (longitud1<1){
-                System.out.println("el primer argumento debe de ser un numero mayor que cero");
+         if (intentos<1){
+                System.out.println("el segundo argumento debe de ser un numero mayor que cero");
                 System.exit(0);
          }
-         return longitud1;
+         return intentos;
   }
 
   private static boolean leerTercerArgumento(String args){
